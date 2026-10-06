@@ -53,7 +53,7 @@ def _expected_reason(row: dict, expected: dict | None = None) -> str:
 class AnomalyDetector:
     def __init__(self, contamination=0.03, random_state=42):
         self.model = IsolationForest(
-            n_estimators=80, contamination=contamination,
+            n_estimators=40, contamination=contamination,
             random_state=random_state, n_jobs=1,
         )
         self.contamination = contamination

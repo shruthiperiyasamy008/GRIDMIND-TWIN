@@ -45,8 +45,8 @@ class EnergyForecaster:
 
     def __init__(self, model=None):
         self.model = model or RandomForestRegressor(
-            n_estimators=300, max_depth=12, min_samples_leaf=3,
-            random_state=42, n_jobs=-1,
+            n_estimators=100, max_depth=12, min_samples_leaf=3,
+            random_state=42, n_jobs=1,
         )
         self.feature_cols = [
             "hour", "day_of_week", "weekend", "temperature", "occupancy",
