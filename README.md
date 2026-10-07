@@ -1,12 +1,12 @@
-# WattWise.ai
+# Gridmind twin
 
-WattWise.ai is a working, hackathon-ready energy optimisation platform with a computational Digital Twin. Every dashboard value in this repository is derived from **SIMULATED** building readings; no live meter or IoT feed is claimed.
+Gridmind twin is a working, hackathon-ready energy optimisation platform with a computational Digital Twin. Every dashboard value in this repository is derived from **SIMULATED** building readings; no live meter or IoT feed is claimed.
 
 ## Architecture
 
 `Next.js dashboard → FastAPI API → PostgreSQL → pandas / scikit-learn analytics → Python Digital Twin`
 
-The backend seeds a 30-day hourly simulation for WattWise Demo Campus. `SimulatedDataProvider` is the present provider abstraction; SmartMeter, IoT, and BMS providers are intentionally future extension points.
+The backend seeds a 30-day hourly simulation for Gridmind twin Demo Campus. `SimulatedDataProvider` is the present provider abstraction; SmartMeter, IoT, and BMS providers are intentionally future extension points.
 
 ## Run with Docker
 
